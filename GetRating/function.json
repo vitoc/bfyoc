@@ -1,0 +1,27 @@
+{
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": [
+                "get"
+            ]
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
+            "name": "inputDocument",
+            "databaseName": "icecreamdb",
+            "collectionName": "rating",
+            "connectionStringSetting": "CosmosDbConnectionString",
+            "direction": "in",
+            "type": "cosmosDB",
+            "sqlQuery": "SELECT * from c where c.id = {id}"
+        }
+    ]
+}

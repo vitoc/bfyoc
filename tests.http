@@ -27,3 +27,11 @@ content-type: application/json
   "rating": 5,
   "userNotes": "I love the subtle notes of cherry in this ice cream!"
 }
+
+###
+
+http://localhost:7071/api/GetRating?id=812d2ff4-1e21-46b6-bd4f-1b16ff4db3d1
+
+###
+
+http://localhost:7071/api/GetRatings?userId=cc20a6fb-a91f-4192-874d-132493685376
